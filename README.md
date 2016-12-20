@@ -1,7 +1,7 @@
 Headless Biodalliance
 =======================
 
-The [https://www.biodalliance.org/](Biodalliance) genome browser
+The [Biodalliance](https://www.biodalliance.org/) genome browser
 in command line form!
 
 Currently somewhat-aspirational: it's slower than in needs to be (does
