@@ -96,7 +96,8 @@ function headlessBiodalliance(config, output, width, timeout, region) {
                 offscreenInitWidth: width,
                 onFirstRender: function() {
                     const svg = browser.makeSVG({'width': width, output: 'string'});
-                    fs.writeFileSync(output, svg.replace(/clippath/g, 'clipPath'))
+                    const fixedSVG = svg.replace(/<(\/?)clippath([^>]*)>/g, '<$1clipPath$2>');
+                    fs.writeFileSync(output, fixedSVG)
                     process.exit(0);
                 }
             }
