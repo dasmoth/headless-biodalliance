@@ -1,0 +1,16 @@
+{
+  "name": "headless-biodalliance",
+  "version": "0.13.90",
+  "description": "Minimal server-side wrapper for Biodalliance",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "canvas": "^1.6.2",
+    "dalliance": "https://www.biodalliance.org/prerelease/dalliance-0.13.90-alpha.1.tgz",
+    "jsdom": "^9.8.3",
+    "xhr2": "^0.1.3",
+    "yargs": "^6.5.0"
+  },
+  "bin": {
+    "headless-biodalliance": "./src/js/headless.js"
+  }
+}
