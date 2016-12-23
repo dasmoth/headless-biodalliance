@@ -1,0 +1,31 @@
+{
+    "chr": "22",
+    "viewStart": 30300000,
+    "viewEnd": 30500000,
+
+    "coordSystem": {
+        "speciesName": "Human",
+        "taxon": 9606,
+        "auth": "GRCh",
+        "version": "8",
+        "ucscName": "hg38"
+    },
+
+    "sources": [
+        {"name": "Genome",
+         "twoBitURI": "http://www.biodalliance.org/datasets/hg38.2bit",
+         "tier_type": "sequence"},
+
+        {"name": "GENCODE",
+         "desc": "Gene structures from GENCODE 20",
+         "bwgURI": "https://www.biodalliance.org/datasets/GRCh38/gencode.v20.annotation.bb",
+         "stylesheet_uri": "https://www.biodalliance.org/stylesheets/gencode2.xml",
+         "collapseSuperGroups": true,
+         "trixURI": "https://www.biodalliance.org/datasets/GRCh38/gencode.v20.annotation.ix"},
+
+        {"name": "Repeats",
+         "desc": "Repeat annotation from UCSC", 
+         "bwgURI": "http://www.biodalliance.org/datasets/GRCh38/repeats.bb",
+         "stylesheet_uri": "http://www.biodalliance.org/stylesheets/bb-repeats2.xml"}
+    ]
+}
